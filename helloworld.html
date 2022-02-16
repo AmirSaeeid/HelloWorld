@@ -23,6 +23,33 @@
               <td>Nouravar</td>
               <td>Male</td>
          </table>
-         
+         <div id="output"></div>
+        <script>
+            var row = parseInt(prompt("Please enter the number of rows to make pattern"))
+            
+            
+            var out = "";
+            for(var i = 1; i <= row; i++){
+            for(var j = 0; j < i; j++){
+            out += '*';
+        }
+                out = out + "<br/>";
+            }
+            for( var i = row - 1; i > 0 ; i--){
+       for(var j = 0; j < i; j++)
+        {
+            out += '*';
+        }
+        out = out + "<br/>";
+   }
+    document.getElementById('output').innerHTML = 
+        out;
+            
+        </script>
+        
+        <h1>Norwalk, CT</h1>
+        <p><img src="norwalk.jpeg" alt="norwalkct"/>Norwalk is a city located in southwestern Connecticut, United States, in southern Fairfield County, on the northern shore of Long Island Sound. Norwalk lies within both the New York metropolitan area and the Bridgeport metropolitan area.</p>
+        <p>Roger Ludlow purchased the areas east of the Norwalk river from Chief Mahackemo of the Norwaake (or Naramauke) Indians in 1640. Norwalk was settled in 1649, incorporated September 1651, and named after the Algonquin word noyank, meaning "point of land", or more probably from the native American name "Naramauke".</p>
+    
     </body>
 </html>
